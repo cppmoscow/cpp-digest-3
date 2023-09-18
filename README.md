@@ -12,6 +12,12 @@
 
 ## ⚡️️ Новости и релизы
 
+1. [Dear ImGui 1.89.9](https://github.com/ocornut/imgui/releases/tag/v1.89.9) — Сентябрьский патч-релиз, содержащий небольшие изменения и багфиксы.
+2. [Conan 1.61.0](https://github.com/conan-io/conan/releases/tag/1.61.0) — Добавление поддеркжи [SCons](https://scons.org/) и Xcode 15, другие мелкие изменения и багфиксы.
+3. [Conan 2.0.11](https://github.com/conan-io/conan/releases/tag/2.0.11) — Улучшение поддеркжи Meson и clang-cl, исправлениие регрессий и крашей, другие небольшие улучшения и исправления.
+4. [CppCheck 2.12.0](https://sourceforge.net/p/cppcheck/news/2023/09/cppcheck-2120/) — Добавление нескольких новых и улучшение уже существующих проверок.
+5. [Godot XR September 2023](https://godotengine.org/article/godot-xr-update-sep-2023/) — Добавление поддержки macOS OpenXR, нескольких новых шлемов: Tilt Five, PICO.
+6. [Ogre 14.1.0](https://www.ogre3d.org/2023/09/12/ogre-14-1-released) — Добавление поддержки прямоугольных источников света и улучшение теней: теперь в их формировании может участвовать несколько светильников, а не только один.
 ## 📝 Статьи
 
 1. Andreas Fertig: [Control your numbers in C++](https://andreasfertig.blog/2023/09/control-your-numbers-in-cpp/) — Обзор нововведения C++14, для удобства чтения позволяющего использовать сепаратор в целочисленных литералах.
@@ -22,13 +28,36 @@
 6. Marius Bancila: [Formatting Text in C++: The Old and The New Ways](https://mariusbancila.ro/blog/2023/09/12/formatting-text-in-c-the-old-and-the-new-ways/) — Обзор различных способов форматирования текста в C++, сравнение их производительности: [I/O streams](https://en.cppreference.com/w/cpp/io), семейство [printf](https://en.cppreference.com/w/cpp/io/c/fprintf) функций, [std::format](https://en.cppreference.com/w/cpp/utility/format/format), сторонняя библиотека [libfmt](https://github.com/fmtlib/fmt).
 7. Sandor Dargo: [C++23: some changes related to templates](https://www.sandordargo.com/blog/2023/09/06/cpp23-templates) — Обзор нововведений C++23, благодаря которым стала возможна реализация [deducing this](https://habr.com/ru/articles/722668/): [std::forward_like](https://en.cppreference.com/w/cpp/utility/forward_like), вывод типов для унаследованных конструкторов.
 8. Sandor Dargo: [Constexpr functions for smaller binary size?](https://www.sandordargo.com/blog/2023/09/13/constexpr-and-binary-sizes) — constexpr: вред или польза для размеров бинарников?
+9. Julien Jorge: [Weight Gain and Perf Loss](https://julien.jorge.st/posts/en/weight-gain-and-perf-loss/) — Захватывающая детективная история об одной include-директиве, одновременно с увеличением производительности всей программы на 5% уменьшавшей ее размер.
+10. Daneil Lermire: [Locating ‘identifiers’ quickly (ARM NEON edition)](https://lemire.me/blog/2023/09/04/locating-identifiers-quickly-arm-neon-edition/) — Ускорение алгоритма поиска идентификаторов в строке более чем в 30 раз с помощью инструкций [ARM NEON](https://habr.com/ru/articles/548698/).
+
 
 ## 📺 Видео и доклады
 
-1. Jason Turner: [C++ Weekly - Ep 392 - Google's Bloaty McBloatface](https://www.youtube.com/watch?v=MY5DTDc3e-I) — обзор [Bloaty McBloatface: a size profiler for binaries](https://github.com/google/bloaty), поддерживающего ELF, Mach-O, PE/COFF и WebAssembly форматы бинарных файлов.
+1. Jason Turner: [C++ Weekly - Ep 392 - Google's Bloaty McBloatface](https://www.youtube.com/watch?v=MY5DTDc3e-I) — обзор [Bloaty McBloatface](https://github.com/google/bloaty), профилировщика размера для бинарных файлов, поддерживающего WebAssembly, ELF (Linux), Mach-O (MacOS) и PE/COFF (Windows).
 2. Jason Turner: [C++ Weekly - Ep 393 - C++23's std::unreachable](https://www.youtube.com/watch?v=ohMyb4jPIAQ) — Обзор нововведения C++23, позволяющего программисту дать компилятору подсказку о том, что некоторое место в коде недостижимо.
 
+### C++ Now 2023
+
+1. Daisy Hollman, Kris Jusiak: [Adapting C++20 Ranges Algorithms for Most Metaprogramming Needs in Fewer Than 1,000 Lines of Code](https://www.youtube.com/watch?v=69PuizjrgBM) — О нововведениях C++20, делающих метапрограммирование более доступным, и компромиссам между ним, кодогенерацией и дублированием.
+2. Robert Seacord: [Integer Type Selection in C++: in Safe, Secure and Correct Code](https://www.youtube.com/watch?v=82jVpEmAEV4) — Гайд по выбору правильных целочисленных типов: во имя красивых, удобных и безопасных интерфейсов.
+3. John McCall: [Introducing a Memory-Safe Successor Language in Large C++ Code Bases](https://www.youtube.com/watch?v=lgivCGdmFrw) — О максимально безболезненном интегрировании Swift в большие плюсовые кодовые базы, и том, почему этот язык лучше всех остальных подходит для написания критичного кода, где ошибки, связанные с неправильным управлением памятью, недопустимы.
+4. David Sankel: [Assembly, System Calls, and Hardware in C++](https://www.youtube.com/watch?v=7xwjjolDnwg) — Погружение в низкоуровневые аспекты, лежащие в основе всех наших программ: системные вызовы, соглашения о вызовах, атомарные вычисления и не только.
+5. Chandler Carruth: [Carbon Language Successor Strategy: From C++ Interop to Memory Safety](https://www.youtube.com/watch?v=1ZTJ9omXOQ0) — Взгляд на путь, который [Carbon](https://github.com/carbon-language/carbon-lang) предоставит для постепенного и масштабируемого обеспечения безопасности существующих плюсовых кодовых баз.
+6. Tony Van Eerd: [Value Oriented Programming Part 1: You Say You Want to Write a Function](https://www.youtube.com/watch?v=b4p_tcLYDV0) — Гайд по написанию функций в value-ориентированном стиле.
+7. Andrei Zissu: [Lightning Talk: A Journey Back In Time - C++ Evolution](https://www.youtube.com/watch?v=TMYW4Ohm3yI)
+8. Christopher Fretz: [Lightning Talk: How Hard Can it be to SFINAE in C++03?](https://www.youtube.com/watch?v=Nf1N_vogQNM)
+9. Ben Deane: [Lightning Talk: Global API Injection in C++](https://www.youtube.com/watch?v=BYpcAEfG3mo)
+10. Richárd Szalay: [Lightweight Wrappers for Conscious std::transform_reduce Operation Safety](https://www.youtube.com/watch?v=cm5Zwi1EoHQ)
+
+### Stockholm C++ 0x29
+
+1. Paul Dreik: [Using variable templates on a tiny problem](https://www.youtube.com/watch?v=LTzpqF6wAzc) — О том, как шаблонные переменные, представленные в C++14, способны повысить удобочитаемость вашего кода.
+2. Karl Åkerblom: [A quick look at Tracy Profiler](https://www.youtube.com/watch?v=W9U5y5jjQDM) — Краткий обзор инструментального профилировщика [Tracy](https://docs.flaxengine.com/manual/editor/profiling/tracy.html?tabs=code-csharp) и нюансах работы с ним.
+
 ## 🎙️Подкасты
+
+1. CppCast: [Episode 369, AI and Random Numbers](https://cppcast.com/ai_and_random_numbers/) — О различиях между ИИ на основе LLM и более статистических подходах, а также месте случайных чисел во всем этом и ограничениях их текущей поддержки в C++.
 
 ## Послесловие
 
