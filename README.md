@@ -22,7 +22,6 @@
 6. Marius Bancila: [Formatting Text in C++: The Old and The New Ways](https://mariusbancila.ro/blog/2023/09/12/formatting-text-in-c-the-old-and-the-new-ways/) — Обзор различных способов форматирования текста в C++, сравнение их производительности: [I/O streams](https://en.cppreference.com/w/cpp/io), семейство [printf](https://en.cppreference.com/w/cpp/io/c/fprintf) функций, [std::format](https://en.cppreference.com/w/cpp/utility/format/format), сторонняя библиотека [libfmt](https://github.com/fmtlib/fmt).
 7. Sandor Dargo: [C++23: some changes related to templates](https://www.sandordargo.com/blog/2023/09/06/cpp23-templates) — Обзор нововведений C++23, благодаря которым стала возможна реализация [deducing this](https://habr.com/ru/articles/722668/): [std::forward_like](https://en.cppreference.com/w/cpp/utility/forward_like), вывод типов для унаследованных конструкторов.
 8. Sandor Dargo: [Constexpr functions for smaller binary size?](https://www.sandordargo.com/blog/2023/09/13/constexpr-and-binary-sizes) — constexpr: вред или польза для размеров бинарников?
-9. Raymond Chen: [How can I prevent myself from using a parameter after I’ve extracted all value from it?](https://devblogs.microsoft.com/oldnewthing/20230915-00/?p=108775)
 
 ## 📺 Видео и доклады
 
